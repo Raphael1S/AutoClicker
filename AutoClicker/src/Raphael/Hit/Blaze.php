@@ -30,7 +30,7 @@ class Blaze extends PluginBase implements Listener {
     public function onEnable() {
         $pluginName = $this->getDescription()->getName();
         $pluginVersion = $this->getDescription()->getVersion();
-        atualizarPlugin($this, $pluginName, $pluginVersion);
+        atualizarPl($this, $pluginName, $pluginVersion);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
                 $this->saveResource("config.yml");
                 $config = yaml_parse_file($this->getDataFolder() . "config.yml");
