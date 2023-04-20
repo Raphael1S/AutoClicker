@@ -19,7 +19,7 @@ use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\level\Position;
 use pocketmine\utils\Config;
-require_once("Update.php");
+require_once("Updating.php");
 
 class Blaze extends PluginBase implements Listener {
 
