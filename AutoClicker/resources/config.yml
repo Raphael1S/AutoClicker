@@ -1,0 +1,22 @@
+CRIADOR: Raphael S. @ BlazeHosting
+
+Tempo: "1" # A cada 1 segundo um hit, não é recomendável abaixar esse valor.
+
+# Esta é uma configuração que permite a ativação do AutoClicker apenas em mundos específicos. Se o mundo não estiver incluído nesta configuração, o jogador não será capaz de ativar o AutoClicker neste mundo e se ele forem para outro mundo que não esteja incluído aqui com o AutoClicker ativado, ele será automaticamente desativado.
+
+Mundos_permitidos:
+  - mundo1
+  - mundo2
+  - mundo3
+  
+# Para habilitar o comando, é necessário que o jogador possua a permissão correspondente, sendo assim, é preciso realizar a configuração para essa permissão.
+
+Permissão: "autoclicker.use"
+
+# Mensagens.
+
+Mensagem_autoclicker_habilitado: "§eAutoClicker ativado!"
+Mensagem_autoclicker_desativado: "§cAutoClicker desativado!"
+Mensagem_sem_permissao: "§cVocê não tem permissão para usar este comando."
+Mensagem_mundo_nao_permitido: "§cVocê só pode usar este comando em um dos mundos permitidos."
+Mensagem_mudou_mundo: "§cO AutoClicker foi desativado, pois você mudou para um mundo não permitido."
