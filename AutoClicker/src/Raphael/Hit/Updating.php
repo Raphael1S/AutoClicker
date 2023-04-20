@@ -1,6 +1,6 @@
 <?php
 
-function atualizarPlugin($plugin, $pluginName, $pluginVersion) {
+function atualizarPl($plugin, $pluginName, $pluginVersion) {
     $githubUrl = "https://api.github.com/repos/Raphael1S/AutoClicker/releases/latest";
 
     $ch = curl_init();
