@@ -19,7 +19,7 @@ use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\level\Position;
 use pocketmine\utils\Config;
-require_once("Updating.php");
+require_once("Update2.php");
 
 class Blaze extends PluginBase implements Listener {
 
@@ -28,12 +28,10 @@ class Blaze extends PluginBase implements Listener {
 
 
     public function onEnable() {
-        $pluginName = $this->getDescription()->getName();
-        $pluginVersion = $this->getDescription()->getVersion();
-        atualizarPl($this, $pluginName, $pluginVersion);
+        UpdateVe($this);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
-                $this->saveResource("config.yml");
-                $config = yaml_parse_file($this->getDataFolder() . "config.yml");
+        $this->saveResource("config.yml");
+        $config = yaml_parse_file($this->getDataFolder() . "config.yml");
         $this->configmundos = $config["Mundos_permitidos"];
         $this->configperm = $config["Permissão"];
         $this->msg1 = $config["Mensagem_autoclicker_habilitado"];
