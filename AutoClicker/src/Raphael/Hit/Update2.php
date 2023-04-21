@@ -1,6 +1,6 @@
 <?php
 
-function UpdateV($plugin) {
+function UpdateVe($plugin) {
         $url = 'https://github.com/Raphael1S/AutoClicker/releases/download/Vers%C3%A3o/version.txt';
         $options = array(
             'ssl' => array(
