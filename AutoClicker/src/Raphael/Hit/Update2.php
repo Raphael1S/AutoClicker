@@ -1,7 +1,7 @@
 <?php
 
 function UpdateVe($plugin) {
-        $url = 'https://github.com/Raphael1S/AutoClicker/releases/download/Vers%C3%A3o/version.txt';
+        $url = 'https://github.com/Raphael1S/AutoClicker/releases/download/Versão/version.txt';
         $options = array(
             'ssl' => array(
                 'verify_peer' => false,
